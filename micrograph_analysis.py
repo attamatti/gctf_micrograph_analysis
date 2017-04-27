@@ -87,7 +87,7 @@ def get_stats_make_graphs(alldata):
             dfacol = int(i.split('#')[-1])-1
         if '_rlnMicrographName' in i:
             namecol = int(i.split('#')[-1])-1
-        if '_rlnFinalResolution' in i:
+        if '_rlnCtfMaxResolution' in i:
             rescol = int(i.split('#')[-1])-1
             
     v,u,a,names,res = [],[],[],[],[]
