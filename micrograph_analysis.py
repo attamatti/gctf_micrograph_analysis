@@ -14,7 +14,7 @@
     # You should have received a copy of the GNU General Public License
     # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-vers = '1.0'
+vers = '1.0.1'
 import sys
 import warnings
 warnings.filterwarnings("ignore", module="matplotlib")
@@ -87,7 +87,7 @@ def get_stats_make_graphs(alldata):
             dfacol = int(i.split('#')[-1])-1
         if '_rlnMicrographName' in i:
             namecol = int(i.split('#')[-1])-1
-        if '_rlnFinalResolution' in i:
+        if '_rlnCtfMaxResolution' in i:
             rescol = int(i.split('#')[-1])-1
             
     v,u,a,names,res = [],[],[],[],[]
